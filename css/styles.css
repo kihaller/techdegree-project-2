@@ -35,12 +35,13 @@ a {
 h1,
 h2,
 h3 {
-  font-family:'Oswald', sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 h2 {
   text-transform: uppercase;
-  font-size: 0.9em;;
+  font-size: 0.9em;
+  ;
   margin-top: 3em;
   margin-bottom: 2.5em;
 }
@@ -59,18 +60,20 @@ a {
 }
 
 footer a {
-  color:#616161;
+  color: #616161;
 }
 
 img {
-  max-width:100%;
-  height:auto;
+  max-width: 100%;
+  height: auto;
 }
+
 .profile-img {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
   width: 70%;
 }
+
 main p {
   margin-bottom: 2em;
 }
@@ -102,7 +105,7 @@ main {
   padding-bottom: 1.2em;
 }
 
-.skills li{
+.skills li {
   display: inline-block;
   text-align: center;
   font-size: 1.5em;
@@ -135,7 +138,7 @@ main {
 
 #foot-name {
   float: left;
-  color:black
+  color: black
 }
 
 #back-to-top {
@@ -162,7 +165,7 @@ main {
 
 /* ---- Navigation ---- */
 
-.main-nav li{
+.main-nav li {
   list-style: none;
   text-transform: uppercase;
   background: #EDEDED;
@@ -170,12 +173,13 @@ main {
   padding-bottom: 5px;
   padding-left: 5px;
   padding-right: 5px;
-  margin-right: 5px;margin-top: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
   font-weight: bold;
   text-align: center;
 }
 
-.main-nav a{
+.main-nav a {
   display: block;
 }
 
@@ -188,18 +192,13 @@ main {
   color: gray;
 }
 
-
+.foot-nav-big {
+  display: none;
+}
 
 /* ================================= 
   Media Queries
 ==================================== */
-
-/* ---- Phone ---- */
-@media (max-width: 767px) {
-  .foot-nav-big {
-    display: none;
-  }
-}
 
 /* ---- Tablet ---- */
 
@@ -210,11 +209,12 @@ main {
     content: "";
     display: table;
     clear: both;
-}
+  }
 
   .main {
     padding-left: 3em;
-    padding-right: 3em;;
+    padding-right: 3em;
+    ;
   }
 
   .main-header p {
@@ -233,7 +233,7 @@ main {
 
   .main-nav li {
     display: inline-block;
-  } 
+  }
 
   .profile-img {
     float: right;
@@ -242,30 +242,30 @@ main {
     width: 30%;
   }
 
-  #marketing, #travel, #gallery {
+  .portfolio-section {
     float: left;
-    width: 49%;
+    width: calc(50% - 20px);
+    margin: 10px 10px;
   }
 
-  #search, #map, #calculator {
+  .portfolio-section p {
+    height: 4em;
+  }
+
+  #back-to-top {
+    display: none;
+  }
+
+  .foot-nav-big {
+    list-style: none;
     float: right;
-    width: 49%;
+    display: block;
   }
 
-
- #back-to-top {
-   display: none;
- }
-
- .foot-nav-big {
-   list-style: none;
-   float: right;
- }
-
- .foot-nav-big li{
-  display: inline-block;
-  margin: 0 15px;
-}
+  .foot-nav-big li {
+    display: inline-block;
+    margin: 0 15px;
+  }
 
   .main-footer p {
     padding-left: 7em;
@@ -284,61 +284,54 @@ main {
 
 @media (min-width: 1024px) {
 
-body {
-  background: #fafafa;
-}
+  body {
+    background: #fafafa;
+  }
 
-.main-header {
-  margin-left: 2em;
-  margin-right: 2em;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: 3em;
-}
+  .main-header {
+    margin-left: 2em;
+    margin-right: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 3em;
+  }
 
-main {
-  margin-left: 2em;
-  margin-right: 2em;
-  padding-top: 1em;
-  background: white;
-}
+  main {
+    margin-left: 2em;
+    margin-right: 2em;
+    padding-top: 1em;
+    background: white;
+  }
 
-.main-header p {
-  padding-left: 0;
-  padding-right: 5px;
-}
+  .main-header p {
+    padding-left: 0;
+    padding-right: 5px;
+  }
 
-.name {
+  .name {
     float: left;
-}
+  }
 
-.main-nav {
-  float: right;
+  .main-nav {
+    float: right;
 
-}
+  }
 
-.profile-img {
-  clear: both;
-  margin: 0;
-}
+  .profile-img {
+    clear: both;
+    margin: 0;
+  }
 
-.main-footer {
-  padding-bottom: 1.5em;
-}
+  .main-footer {
+    padding-bottom: 1.5em;
+  }
 
-.foot-nav {
-  padding-left: 2em;
-  padding-right: 2em;
-}
+  .foot-nav {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
 
-#marketing, #search, #travel, #map, #gallery, #calculator {
-  float: left;
-  width: 32%;
-}
-
-#search, #gallery {
-  margin-left: 2%;
-  margin-right: 2%;
-}
-
+  .portfolio-section {
+    width: calc(33.333% - 20px);
+  }
 }
